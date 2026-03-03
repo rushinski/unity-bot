@@ -1,6 +1,6 @@
 # Unity Bot - System Architecture
 
-## 🎯 Purpose
+## Purpose
 
 Unity Bot is a **modular, event-driven Discord bot** built with **Node.js** and **discord.js v14**, designed around **subsystems** that scale independently while sharing a common persistence layer in **MongoDB**.
 
@@ -34,7 +34,7 @@ flowchart TD
 
 ---
 
-## ⚙️ Entrypoint
+## Entrypoint
 
 * **`index.js`** bootstraps the bot.
 
@@ -60,9 +60,9 @@ flowchart TD
 
 ---
 
-## 🧩 Subsystems
+## Subsystems
 
-### 🎟 Ticketing & Verification
+### Ticketing & Verification
 
 * **Flow**: Dropdown → modal → ticket channel → support/verification → close → transcript archive.
 * **Features**:
@@ -89,7 +89,7 @@ flowchart TD
 
 ---
 
-### 🛡 Moderation
+### Moderation
 
 * **Commands**: `/ban`, `/unban`, `/idBan`, `/idUnban`, `/strike`, `/verifyUser`, `/clear`.
 * **Events**: `checkBannedWords`, `messageDelete`, `messageUpdate`.
@@ -121,7 +121,7 @@ flowchart TD
 
 ---
 
-### 🏆 Leveling System
+### Leveling System
 
 * **Tracking**: Each message increments XP (`messageCreate` event).
 * **Features**:
@@ -145,7 +145,7 @@ flowchart TD
 
 ---
 
-### 🎭 Roles & Counts
+### Roles & Counts
 
 * **Reaction Roles**:
 
@@ -167,7 +167,7 @@ flowchart TD
 
 ---
 
-### 🎁 Giveaways
+### Giveaways
 
 * **Commands**: `/sendGiveawayMessage`.
 * **Persistence**: `Giveaway` schema (title, prize, winners, end time).
@@ -189,7 +189,7 @@ flowchart TD
 
 ---
 
-### 📊 Logging & Lifecycle
+### Logging & Lifecycle
 
 * **Guild Events**:
 
@@ -214,7 +214,7 @@ flowchart TD
 
 ---
 
-## 📂 Persistence Layer
+## Persistence Layer
 
 * **Guild Configs**: Ticket categories, log channels, role counts, reaction roles.
 * **Users**: Levels, XP, message counts, notification preferences.
@@ -225,7 +225,7 @@ flowchart TD
 
 ---
 
-## 🔗 External Integrations
+## External Integrations
 
 * **Discord API** → Slash commands, modals, embeds, events.
 * **MongoDB** → Persistent datastore for all systems.
@@ -237,18 +237,17 @@ flowchart TD
 
 ---
 
-## 💡 Strengths
+## Strengths
 
 * Modular subsystems with clear separation of concerns.
 * Recovery after restarts (reaction roles, giveaways).
 * Configurable per guild.
 * Transparent logs for moderation and support.
-* Scalable, production-proven in multiple servers.
 * Full audit trail with transcripts and infractions.
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 * Moderation: `/unstrike`, `/warn`, `/unwarn`, `/timeout`, `/untimeout`, `/kick`, `/set-banned-words`.
 * Owner-only commands: `/reload`, `/shutdown`, `/deploy`.
@@ -261,7 +260,3 @@ flowchart TD
 * Automated penetration testing & anomaly detection.
 
 ---
-
-## 📜 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
