@@ -8,7 +8,7 @@ It has been deployed in production Discord servers, powering moderation, communi
 
 ---
 
-## 🌐 System-Wide Overview
+## System-Wide Overview
 
 ```mermaid
 flowchart TD
