@@ -1,60 +1,59 @@
-# Unity Discord Bot - Community Engagement & Support 🎮
+# Unity Bot - Community Engagement & Support
 
 [![Live Bot](https://img.shields.io/badge/Live-Active-green?logo=discord)](https://discord.com/)  
 A **modular Discord bot** built to consolidate commands, events, and support workflows into **one scalable system**.
-Originally designed for a **large-scale gaming community (Kingdom 3743, ~900 members)**, it has since been deployed across **8 servers**, replacing the need for multiple bots.
+Originally designed for a **large-scale gaming community (Kingdom 3743, ~900 members)**.
 
-👉 Explore the **[Unity Bot Landing Page](https://rushinski.github.io/Unity-Landing-Page)** for a live showcase.
+Explore the **[Unity Bot Landing Page](https://rushinski.github.io/Unity-Landing-Page)** for a live showcase.
 
 ---
 
-## 🌐 Live Usage
+## Live Usage
 
 - **Primary Server:** *Kingdom 3743* (~900 members, est. May 2024)  
-- **Adoption:** Running in **8 separate servers**  
 - **Repo Owner:** [rushinski](https://github.com/rushinski)
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎭 Community Engagement
-- 🏆 **Leveling & Leaderboards** → gamified chat progression, message-based leveling engine, `/leaderboard` and `/levelprogress` commands.
-- 🎟️ **Ticketing System** → dropdown ticket creation, modal-based input, role-based verification, support pings with cooldown, closure transcripts (stored in GitHub Gist, fallback to MongoDB).  
+### Community Engagement
+- **Leveling & Leaderboards** → gamified chat progression, message-based leveling engine, `/leaderboard` and `/levelprogress` commands.
+- **Ticketing System** → dropdown ticket creation, modal-based input, role-based verification, support pings with cooldown, closure transcripts (stored in GitHub Gist, fallback to MongoDB).  
   - **1000+ transcripts archived** across servers.
-- 📊 **Role Selection & Counts** → `/sendRolesSelect` for self-assignable roles, reaction role categories, and **real-time role count voice channels**.
+- **Role Selection & Counts** → `/sendRolesSelect` for self-assignable roles, reaction role categories, and **real-time role count voice channels**.
 
-### ⚖️ Moderation & Security
-- 🚫 **Rule Enforcement** → banned words filter with fuzzy matching + severity tiers (warn, strike, auto-ban).
-- 🔨 **Moderation Tools** → `/idBan`, `/idUnban`, `/strike`, `/verifyUser`, `/clear` with auto-escalation (3 strikes = ban).
-- 📝 **Infractions Tracking** → Persistent tracking in MongoDB with automated resets after bans.
-- ✅ **Verification System** → onboarding tickets with manual/automatic verification workflows.
+### Moderation & Security
+- **Rule Enforcement** → banned words filter with fuzzy matching + severity tiers (warn, strike, auto-ban).
+- **Moderation Tools** → `/idBan`, `/idUnban`, `/strike`, `/verifyUser`, `/clear` with auto-escalation (3 strikes = ban).
+- **Infractions Tracking** → Persistent tracking in MongoDB with automated resets after bans.
+- **Verification System** → onboarding tickets with manual/automatic verification workflows.
 
-### 🎉 Engagement Utilities
-- 🎁 **Giveaways** → `/sendGiveawayMessage` with persistent schema for entrants/winners, resumes after restart.
-- ⏰ **Utilities** → `/getUtc`, `/say`, scheduled UTC-ready channels via `readyUtc` event.
+### Engagement Utilities
+- **Giveaways** → `/sendGiveawayMessage` with persistent schema for entrants/winners, resumes after restart.
+- **Utilities** → `/getUtc`, `/say`, scheduled UTC-ready channels via `readyUtc` event.
 
-### 🛠️ Infrastructure & Extensibility
-- 🛠️ **Dynamic Loaders** → auto-registration of commands, events, and UI components.
-- 🔐 **Access Control** → flag-driven restrictions (`admin`, `owner`), cooldowns, and Discord-native permission checks.
-- ☁️ **Hosting/Deployment** → optimized for Discloud + VPS hosting with backups and snapshots.
-- 📂 **Persistence** → MongoDB models for users, configs, tickets, transcripts, infractions, giveaways, and role systems.
-- 🔗 **External Integrations** → GitHub Gist for transcript archiving, GitHub Pages for landing page.
-
----
-
-## 📊 Impact
-
-👥 **893+ community members** in Kingdom 3743  
-🤖 **8 servers** actively running the bot  
-📂 **1000+ support transcripts archived**  
-💼 **3 paid bot development offers** generated from this project  
-☁️ **Scaled hosting** → upgraded from free-tier to paid server due to growth  
-🛡️ **Security-aligned** → built to integrate with Discord’s security & permission model
+### Infrastructure & Extensibility
+- **Dynamic Loaders** → auto-registration of commands, events, and UI components.
+- **Access Control** → flag-driven restrictions (`admin`, `owner`), cooldowns, and Discord-native permission checks.
+- **Hosting/Deployment** → optimized for Discloud + VPS hosting with backups and snapshots.
+- **Persistence** → MongoDB models for users, configs, tickets, transcripts, infractions, giveaways, and role systems.
+- **External Integrations** → GitHub Gist for transcript archiving, GitHub Pages for landing page.
 
 ---
 
-## 🛠 Tech Stack
+## Impact
+
+**893+ community members** in Kingdom 3743  
+**8 servers** actively running the bot  
+**1000+ support transcripts archived**  
+**3 paid bot development offers** generated from this project  
+**Scaled hosting** → upgraded from free-tier to paid server due to growth  
+**Security-aligned** → built to integrate with Discord’s security & permission model
+
+---
+
+## Tech Stack
 
 **Bot Core**
 - [Node.js](https://nodejs.org/) + [discord.js](https://discord.js.org/) v14
@@ -75,7 +74,7 @@ Originally designed for a **large-scale gaming community (Kingdom 3743, ~900 mem
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 bot/
@@ -100,7 +99,7 @@ bot/
 
 ---
 
-## 🧪 Reliability & Testing
+## Reliability & Testing
 
 ### Testing & QA
 - All testing conducted in a **private Discord server** prior to deployment.
@@ -108,7 +107,6 @@ bot/
   - Monitor **Discloud logs** via mobile.
   - Restart bot quickly if errors occur.
   - Debug and patch fixes directly in **VS Code**.
-- Demonstrates hands-on QA and monitoring discipline.
 
 ### Error Handling
 - `try/catch` used across commands/events.
@@ -126,7 +124,7 @@ bot/
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 ### Scaling & Extensibility
 - Add moderation commands: `/unstrike`, `/warn`, `/unwarn`, `/timeout`, `/untimeout`, `/kick`, `/set-banned-words`.
@@ -140,4 +138,4 @@ bot/
 
 ---
 
-📌 Portfolio Case Study: This bot demonstrates **scalable engineering for real-world community management**, bridging moderation, engagement, and structured support into one unified system.
+Portfolio Case Study: This bot demonstrates **scalable engineering for real-world community management**, bridging moderation, engagement, and structured support into one unified system.
