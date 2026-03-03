@@ -1,13 +1,13 @@
-# Unity Discord Bot - Security Notes
+# Unity Bot - Security Notes
 
-## 🎯 Purpose
+## Purpose
 
 This document outlines the **security considerations** for the Unity Discord Bot.  
 As a community-facing platform handling **user data, moderation actions, and external integrations**, security was a core part of the system design.
 
 ---
 
-## 🔑 Core Risks
+## Core Risks
 
 ### 1. User Data (PII)
 - **Collected:** Discord IDs, usernames, messages, XP/levels, moderation strikes, tickets, ticket transcripts.
@@ -64,7 +64,7 @@ As a community-facing platform handling **user data, moderation actions, and ext
 ---
 
 ### 5. Deployment & Hosting
-- **Platform:** VPS + Discloud.
+- **Platform:** Discloud.
 - **Risks:**
   - Config leaks could allow hijacked deployments.
 - **Mitigations:**
@@ -74,7 +74,7 @@ As a community-facing platform handling **user data, moderation actions, and ext
 
 ---
 
-## 📋 Security-by-Design Principles
+## Security-by-Design Principles
 
 1. **Least Privilege** → Role/permission-based access for all moderation actions.
 2. **Zero Secrets in Repo** → Tokens and DB credentials externalized in `.env`.
@@ -85,7 +85,7 @@ As a community-facing platform handling **user data, moderation actions, and ext
 
 ---
 
-## ⚡ Gaps & Future Improvements
+## Gaps & Future Improvements
 
 - No automated malware scanning for uploaded attachments in tickets.
 - No structured intrusion detection or anomaly monitoring.
@@ -93,20 +93,5 @@ As a community-facing platform handling **user data, moderation actions, and ext
 - Reliance on manual moderator oversight for enforcement quality.
 - Secrets currently visible in `config.json` in repo → must be migrated fully to `.env`.
 - No automated penetration testing or fuzzing of commands.
-
----
-
-## ✅ Recruiter-Facing Takeaway
-
-The Unity Discord Bot demonstrates **security-aware design** in a real-world community management context:
-
-- Protected user data with secret transcripts (GitHub Gist + MongoDB fallback).  
-- Safe handling of bot tokens and MongoDB URLs.  
-- Moderation gated by both Discord and bot-level permissions.  
-- Verification tickets protect against raid-style attacks.  
-- Deployment aligned with best practices for secrets management.  
-- Built-in **audit trail** for every moderation action and ticket lifecycle.  
-
-While lightweight, the bot applies **practical, production-grade security practices** appropriate for community-scale deployment.
 
 ---
