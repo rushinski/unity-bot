@@ -1,13 +1,13 @@
-# Unity Discord Bot - Integrations Overview
+# Unity Bot - Integrations Overview
 
-## 🎯 Purpose
+## Purpose
 
 The Unity Discord Bot integrates with several **third-party services and libraries** to enable its modular community management features.  
 These integrations power **commands, persistence, transcripts, scheduling, and deployment workflows**.
 
 ---
 
-## 🔑 Discord API (Core Platform)
+## Discord API (Core Platform)
 
 - **Purpose:** Power all bot interactions (commands, events, role handling).
 - **Integration:**
@@ -24,7 +24,7 @@ These integrations power **commands, persistence, transcripts, scheduling, and d
 
 ---
 
-## 🔑 MongoDB (Database)
+## MongoDB (Database)
 
 - **Purpose:** Provide persistence across all features.
 - **Integration:**
@@ -45,7 +45,7 @@ These integrations power **commands, persistence, transcripts, scheduling, and d
 
 ---
 
-## 🔑 GitHub Gist (Transcript Archiving)
+## GitHub Gist (Transcript Archiving)
 
 - **Purpose:** Archive ticket transcripts externally for accountability.
 - **Integration:**
@@ -61,7 +61,7 @@ These integrations power **commands, persistence, transcripts, scheduling, and d
 
 ---
 
-## 🔑 Discloud Hosting (Deployment)
+## Discloud Hosting (Deployment)
 
 - **Purpose:** Simplify hosting, scaling, and redeployment.
 - **Integration:**
@@ -78,7 +78,7 @@ These integrations power **commands, persistence, transcripts, scheduling, and d
 
 ---
 
-## 🔑 Additional Libraries
+## Additional Libraries
 
 - **discord-html-transcripts** → export styled transcripts
 - **date-fns / node-cron** → scheduling + UTC updates
@@ -87,7 +87,7 @@ These integrations power **commands, persistence, transcripts, scheduling, and d
 
 ---
 
-## 📋 Integration Data Flow
+## Integration Data Flow
 
 ```mermaid
 flowchart TD
@@ -100,7 +100,7 @@ flowchart TD
 
 ---
 
-## ⚡ Integration Strengths
+## Integration Strengths
 
 - **Discord API** → native commands, events, role/permission security.
 - **MongoDB** → persistent storage across subsystems.
