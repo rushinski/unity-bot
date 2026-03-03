@@ -1,6 +1,5 @@
 # Unity Bot - Community Engagement & Support
 
-[![Live Bot](https://img.shields.io/badge/Live-Active-green?logo=discord)](https://discord.com/)  
 A **modular Discord bot** built to consolidate commands, events, and support workflows into **one scalable system**.
 Originally designed for a **large-scale gaming community (Kingdom 3743, ~900 members)**.
 
@@ -36,7 +35,7 @@ Explore the **[Unity Bot Landing Page](https://rushinski.github.io/Unity-Landing
 ### Infrastructure & Extensibility
 - **Dynamic Loaders** → auto-registration of commands, events, and UI components.
 - **Access Control** → flag-driven restrictions (`admin`, `owner`), cooldowns, and Discord-native permission checks.
-- **Hosting/Deployment** → optimized for Discloud + VPS hosting with backups and snapshots.
+- **Hosting/Deployment** → optimized for Discloud hosting with backups and snapshots.
 - **Persistence** → MongoDB models for users, configs, tickets, transcripts, infractions, giveaways, and role systems.
 - **External Integrations** → GitHub Gist for transcript archiving, GitHub Pages for landing page.
 
@@ -44,8 +43,7 @@ Explore the **[Unity Bot Landing Page](https://rushinski.github.io/Unity-Landing
 
 ## Impact
 
-**893+ community members** in Kingdom 3743  
-**8 servers** actively running the bot  
+**900+ community members** in Kingdom 3743  
 **1000+ support transcripts archived**  
 **3 paid bot development offers** generated from this project  
 **Scaled hosting** → upgraded from free-tier to paid server due to growth  
